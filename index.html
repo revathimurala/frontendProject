@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laundry Services</title>
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo"><p>Logo</p></div>
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="username">Username</div>
+        </div>
+        
+    </header>
+    <section id="home" class="home-section">
+        <div class="main-container">
+            <div class="home-container">
+                <div class="left-section">
+                    <h1>Revitalize Your Clothes with Expert </h1>
+                    <h1 class="main-heading">Laundry Services!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui excepturi reiciendis quibusdam minus sint consequuntur? Enim placeat nulla ex neque.</p>
+                    <button class="btn-book">Book a Service today!</button>
+                </div>
+                <div class="right-section">
+                    <img src="https://media.istockphoto.com/id/2210336211/photo/laundry-3d-icon-jpg.jpg?s=612x612&w=0&k=20&c=wV7UJcx-jeIL2EuKXUNK4vfCNUVaMPzL7PWIIL08u00=" alt="laundry-services">
+                </div>
+            </div>
+            <div class="acheivements">
+                <div class="acheivements-h"><h2>Our Achievements</h2></div>
+                <div class="in-numbers">
+                    <div>
+                        <h3>15+</h3>
+                        <p>Laundry Services</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>240+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>2+ Yrs</h3>
+                        <p>Experiences</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </section>
+    <section id="services" class="services">
+        <div class="services-container">
+            <div class="our-services">
+                <h2>Our Services</h2>
+                <p>click On The Add To Cart Button To Add The Services To Your Cart</p>
+                <hr>
+                
+                
+                <div class="items-list">
+                    <div class="item">
+                        <div><span><img src="images/laundry.png" alt="dry cleaning" class="item-icon"></span> <span>Dry Cleaning</span> 	&#8226 <span class="price">&#8377 200.00</span></div>
+                        <div><button class="add-btn" data-name="Dry Cleaning" data-price="200" onclick="addItem('Dry Cleaning',200,this)">Add Item &#8853</button></div>
+                    </div>
+                    <div class="item">
+                        <div><span><img src="images/laundry1.png" alt="wash and fold" class="item-icon"></span> <span>wash and fold</span> &#8226 <span class="price">&#8377 100.00</span></div>
+                        <div><button class="add-btn" data-name="Wash & Fold" data-price="100" onclick="addItem('Wash & Fold',100,this)">Add Item &#8853</button></div>
+                    </div>
+                    <div class="item">
+                        <div><span><img src="images/iron.png" alt="ironing" class="item-icon"></span> <span>ironing</span> 	&#8226 <span class="price">&#8377 30.00</span></div>
+                        <div><button class="add-btn" data-name="ironing" data-price="30" onclick="addItem('ironing',30,this)">Add Item &#8853</button></div>
+                    </div>
+                    <div class="item">
+                        <div><span><img src="images/food.png" alt="stain removal" class="item-icon"></span> <span>stain removal</span> 	&#8226 <span class="price">&#8377 500.00</span></div>
+                        <div><button class="add-btn" data-name="stain removal" data-price="500" onclick="addItem('stain removal',500,this)">Add Item &#8853</button></div>
+                    </div>
+                    <div class="item">
+                        <div><span><img src="images/leather.png" alt="leather and suede cleaning" class="item-icon"></span>leather & suede cleaning </span> &#8226 <span class="price">&#8377 999.00</span></div> 
+                        <div><button class="add-btn" data-name="leather & suede cleaning" data-price="999" onclick="addItem('leather & suede cleaning',999,this)">Add Item &#8853</button></div>
+                    </div>
+                    <div class="item">
+                        <div><span><img src="images/dress.png" alt="wedding dress cleaning" class="item-icon"></span>wedding dress cleaning</span> &#8226<span class="price">&#8377 2800.00</span></div>
+                        <div><button class="add-btn" data-name="wedding dress cleaning" data-price="2800" onclick="addItem('wedding dress cleaning',2800,this)">Add Item &#8853</button></div>
+                    </div>
+                </div>
+                <hr>
+                <p style="color: #0a6cb7;">&#9432   Add the items to the cart and book now</p>
+                
+            </div>
+            <div class="about">
+
+                <div class="about-content">
+                <div class="add-items">
+                <h3>Added Items</h3>
+
+                
+                <div class="cart-list">
+                    <table id="cartTable">
+                        <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Service Name</th>
+                            <th>Price</th>
+                        </tr>
+                        </thead>
+                        
+                        <tbody>
+                        </tbody>
+                        
+                    </table>
+                    <p id="emptyMsg">No items added yet</p>
+                </div>
+                
+
+
+                <h4>
+                    <span>Total Amount:</span>
+                    <span id="total">₹0</span>
+                </h4>
+            </div>
+
+                <div class="book-now">
+                    <form action="">
+                    <h4>Book Now</h4>
+
+                        <label>Full Name</label>
+                        <input type="text" class="fname" required>
+
+                        <label>Email ID</label>
+                        <input type="email" class="email" required>
+
+                        <label>Phone Number</label>
+                        <input type="tel" class="phno" required>
+
+                        <button type="button" class="book-btn" onclick="bookNow()">Book Now</button>
+                    </form>
+                    <p id="bookingMsg" class="booking-msg hidden"></p>
+                    
+                </div>
+                </div>
+                <div class="about-alert hidden" id="aboutAlert">
+                    <div class="alert-box">
+                        <p id="aboutAlertMsg"></p>
+                        <button onclick="closeAboutAlert()">OK</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section id="about-us">
+    <div class="features" >
+            <div class="feature">
+                <img src="images/washing-machine.png" alt="Premium Services">
+                <h4>Premium Services</h4>
+                <p>High quality laundry care</p>
+            </div>
+            <div class="feature">
+                <img src="images/24-hours-support.png" alt="Quick Support">
+                <h4>Quick Support</h4>
+                <p>24/7 customer assistance</p>
+            </div>
+            <div class="feature">
+                <img src="images/fast-delivery.png" alt="Hassle Free Delivery">
+                <h4>Hassle Free Delivery</h4>
+                <p>Pickup & drop at your door</p>
+            </div>
+            <div class="feature">
+                <img src="images/trade.png" alt="Affordable Prices">
+                <h4>Affordable Prices</h4>
+                <p>Best value guaranteed</p>
+            </div>
+        </div>
+    </section>
+        
+        
+
+        
+        <div class="newsletter">
+            <h3>Subscribe to our newsletter</h3>
+            <div class="newsletter-form">
+                <input type="text" placeholder="Full name">
+                <input type="email" placeholder="Email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <footer class="footer"></footer>
+        <div class="footer-bottom">
+            <div class="footer-col">
+                <h3>Logo</h3>
+                <p>Professional laundry services you can trust.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Important Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Email: support@laundry.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="socials">
+                    <a href="#"><img src="images/communication.png" alt="face book"></a>
+                    <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                    <a href="#"><img src="images/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
