@@ -7,6 +7,9 @@ html{
     font-family: Arial, Helvetica, sans-serif
 }
 
+
+body{ padding-top:0px; }
+
 .head-container{
     background-color: white;
     display:flex;
@@ -15,6 +18,7 @@ html{
     padding:20px 0px;
     left:0;
     width:100%;
+    z-index:3;
 
 }
 
@@ -95,7 +99,8 @@ html{
     border-radius:10px;
     cursor:pointer;
     text-decoration: none;
-    
+    display: inline-block;
+    text-align: center;
 }
 .acheivements{
     display:flex;
@@ -523,19 +528,76 @@ label{
 }
 
 @media (max-width: 600px) {
+    body { padding-top: 0; }
+    .acheivements{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+    }
+    .head-container a{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    
     .head-container{
-    flex-direction: column; 
-    align-items: flex-start; 
+        background-color: rgba(255, 255, 255, 0.838);
+    }
+    .newsletter{
+        /* display:grid;
+    grid-template-columns: 1fr; */
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    }
+    .newsletter-form{
+        display:flex;
+    flex-direction: column;
+    gap:10px;
+    }
+    .head-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: flex-start;  */
+    /* display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    }
+    .username{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:30px;
     }
     .nav-bar nav ul {
         flex-direction: column;
         gap:8px;
+        
+        
+    
     }
+    .nav-bar nav ul li a{
+        color:black;
+    }
+ 
     .home-container{
-        padding: 40px 14px;
+        padding: 150px 14px;
     }
     .left-section h1 {
-        font-size: 1.4rem;
+        font-size: 1.09rem;
+        
+    }
+    .left-section p{
+        text-align: center;
     }
     .main-heading {
         font-size: 1.5rem;
@@ -558,6 +620,15 @@ label{
         width: 100%;
         box-sizing: border-box; }
 
+   
+    .left-section a{
+        display:block;
+        width:100%;
+        box-sizing: border-box;
+        padding: 10px 14px;
+        font-size: 1rem;
+    }
+
     .about-alert .alert-box {
         width: 92%;
         max-width: 320px; }
@@ -566,5 +637,17 @@ label{
         flex-direction: column;
         gap: 16px;
         align-items: center;
+    }
+    .services-container{
+        padding:100px 0px;
+    }
+    .our-services{
+        text-align: center;
+    }
+    .features{
+        padding:110px 0px;
+    }
+    .newsletter{
+        padding:270px 20px;
     }
 }
