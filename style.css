@@ -87,13 +87,14 @@ html{
 .right-section img{
     width:450px;
 }
-.btn-book{
+.left-section a{
     color:white;
     background-color: #1298ffd0;
     border:10px solid transparent;
     padding:7px 30px;
     border-radius:10px;
     cursor:pointer;
+    text-decoration: none;
     
 }
 .acheivements{
